@@ -1,0 +1,8 @@
+--skip-action-mailer
+--skip-action-mailbox
+--skip-action-text
+--skip-test
+--skip-system-test
+--database=postgresql
+--css=tailwind
+--javascript=esbuild
