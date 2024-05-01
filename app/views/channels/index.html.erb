@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="grid grid-cols-12 gap-4 p-4 w-full h-full">
+  <div id="channels" class="col-span-3 bg-gray-100 p-4 rounded shadow-md">
+    <h2 class="text-lg font-bold mb-4">Channels</h2>
+    <% @channels.each do |channel| %>
+      <p class="mb-2"><%= channel.name %></p>
+    <% end %>
+  </div>
+
+  <div id="messages" class="col-span-9 bg-white p-4 rounded shadow-md">
+    <h2 class="text-lg font-bold mb-4">Messages</h2>
+
+    <div id="messages-list" class="overflow-y-auto h-96 mb-4">
+      <% [1,3,4].each do |message| %>
+        <p class="mb-2"><%= message %></p>
+      <% end %>
+    </div>
+
+    <div id="message-input" class="border-t pt-4">
+      <input type="text" class="w-full rounded p-2" placeholder="Type your message here...">
+    </div>
+  </div>
+</div>
