@@ -1,10 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="grid grid-cols-12 gap-4 p-4 w-full h-full">
-  <div id="channels" class="col-span-3 bg-gray-100 p-4 rounded shadow-md">
+<div class="grid grid-cols-12 gap-4 p-4 w-full h-full" data-controller="">
+  <div id="channels" class="col-span-3 bg-gray-100 p-4 rounded shadow-md" data-controller="channel">
     <h2 class="text-lg font-bold mb-4">Channels</h2>
     <% @channels.each do |channel| %>
-      <p class="mb-2"><%= channel.name %></p>
+      <p class="mb-2" data-action="click->channel#selectChannel" data-channel-name="<%= channel.name %>"><%= channel.name %></p>
     <% end %>
   </div>
 

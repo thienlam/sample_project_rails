@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../sample_project_rails/.idea/demo_rails_anycable.iml" filepath="$PROJECT_DIR$/../sample_project_rails/.idea/demo_rails_anycable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sample_project_rails.iml" filepath="$PROJECT_DIR$/.idea/sample_project_rails.iml" />
     </modules>
   </component>
 </project>
